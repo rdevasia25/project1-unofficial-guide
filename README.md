@@ -1,9 +1,20 @@
 # The Unofficial Guide — Project 1
 
-> **How to use this template:**
-> Complete each section *after* you've built and tested the corresponding part of your system.
-> Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
-> Every section below is required for submission. One-liners will not receive full credit.
+A RAG system that answers questions about CS professors at Virginia Tech using student reviews from Rate My Professors and Coursicle. Ask a plain-language question and get a grounded, cited answer drawn from real collected documents.
+
+## How to Run
+
+```bash
+python -m venv .venv && source .venv/bin/activate   # Mac/Linux
+pip install -r requirements.txt
+cp .env.example .env   # add your GROQ_API_KEY
+
+python embed.py        # build vector store (first time, or after document changes)
+python app.py          # launch Gradio UI at http://localhost:7860
+python evaluate.py     # run all 5 evaluation questions
+```
+
+Pipeline modules: `ingest.py` → `chunker.py` → `embed.py` → `retrieve.py` → `generate.py` → `app.py`
 
 ---
 
@@ -30,6 +41,24 @@ Student reviews of CS professors at Virginia Tech. Official course catalogs desc
 | 11 | CS2114 (Coursicle) | Course-level reviews (91 total) | `documents/cs2114_coursicle.txt` |
 
 See `documents/sources.md` for original URLs and collection notes.
+
+---
+
+## Document Ingestion Pipeline
+
+Documents were collected manually from Rate My Professors and Coursicle (JavaScript-rendered sites that resist automated scraping) and saved as structured `.txt` files in `documents/`. No live web scraping at runtime — the pipeline reads local files only.
+
+**Loading:** `ingest.py` walks `documents/*.txt` and dispatches to one of two parsers based on filename suffix (`*_rmp.txt` or `*_coursicle.txt`).
+
+**Cleaning (during parse):**
+- RMP footer boilerplate ("Load More Ratings," copyright lines) was excluded at collection time
+- Inline `Tags:` suffixes stripped from review text when written on the same line as `Review:` (e.g., `Review: Good professor. Tags: Amazing lectures...` → `Good professor.`)
+- Separate `Tags:` lines removed entirely — they are RMP metadata, not student opinion
+- Coursicle metadata-only lines skipped ("Recent professors teaching this course...", "Cons noted for some instructors...")
+
+**Structured output:** Each parsed review becomes a dict with professor, course, source URL, source file, date, quality/difficulty (RMP only), and cleaned review text. Coursicle course descriptions become separate records with `record_type="course_description"`.
+
+**Verification:** `python build_index.py` prints per-file record counts, 5 sample chunks, and validation checks (empty chunks, HTML artifacts, duplicates).
 
 ---
 
@@ -87,16 +116,56 @@ Source attribution is enforced through two independent mechanisms:
 
 ## Evaluation Report
 
+Run date: June 2026. Full pipeline test via `python evaluate.py`.
+
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | Which professor do students recommend for CS1064, and how many hours per week do they say they spend on coursework outside of class? | John Lewis; roughly 1–3 hours outside class | Recommends John Lewis; cites "roughly 1-3 hours outside of class" from `john_lewis_rmp.txt` | Relevant — top chunk is the exact Lewis review containing the hours detail | Accurate |
-| 2 | Does Mohammed Farghally offer test retakes in CS2114 or CS3114? | Yes — free test retakes; 10% early bonus in CS3114 | States Farghally offers free test retakes in CS2114; says no information on CS3114 | Relevant — top two chunks are Farghally CS2114 reviews mentioning retakes | Partially accurate (retakes confirmed; CS3114 bonus missed because that chunk ranked below top-5) |
-| 3 | What specific grading complaint do students raise about Margaret Ellis's CS2114 section? | TAs grade very slowly — grades drop from A to B-/C+ over weeks | Noted "very slow and inconsistent" grading, but attributed it to CS2104 rather than CS2114; also cited deadline strictness | Partially relevant — retrieved Ellis chunks but top result was the CS2104 review, not CS2114 | Partially accurate (identifies slow grading but assigns it to wrong course) |
-| 4 | Is Chris Thomas's CS5814 or CS5864 class an easy A? | No — math-heavy, intense exams, but curves and extra credit available | Returned: "I don't have enough information in the provided reviews to answer that question." | Partially relevant — Thomas CS5864 chunks appeared at ranks 4–5 but the "easy A" review ranked ~25th | Inaccurate (correct answer exists in corpus but was not retrieved; system correctly refused to guess) |
-| 5 | How many reports are assigned in Amun Kharel's CS3724, and is attendance mandatory? | 4 group + 1 personal report; attendance mandatory in some sections | Correctly cited 4 group + 1 personal report; said no info on attendance | Relevant — top Kharel chunks contain report count details | Partially accurate (report count correct; attendance info exists in documents but model couldn't find it) |
+| 1 | Which professor do students recommend for CS1064, and how many hours per week do they say they spend on coursework outside of class? | John Lewis; roughly 1–3 hours outside class | Recommends John Lewis; cites "roughly 1-3 hours outside of class" with `(Source: john_lewis_rmp.txt)` | Relevant — top chunk (`john_lewis_rmp_28`, dist=0.41) is the exact review containing hours and recommendation | Accurate |
+| 2 | Does Mohammed Farghally offer test retakes in CS2114 or CS3114? | Yes — free test retakes; 10% early bonus in CS3114 | States Farghally offers free test retakes in CS2114; says no information on CS3114 | Relevant — top two chunks are Farghally CS2114 reviews mentioning "Free test retakes" (dist=0.43, 0.50) | Partially accurate |
+| 3 | What specific grading complaint do students raise about Margaret Ellis's CS2114 section? | TAs grade very slowly — grades drop from A to B-/C+ over weeks | "I don't have enough information in the provided reviews to answer that question." | Partially relevant — retrieved Ellis chunks but the CS2114 slow-TA review (`margaret_ellis_rmp_31`) ranked 8th; top chunk was a CS2104 complaint about slow grading (dist=0.44) | Inaccurate |
+| 4 | Is Chris Thomas's CS5814 or CS5864 class an easy A? | No — math-heavy, intense exams; "if you want easy A take someone else" | "I don't have enough information in the provided reviews to answer that question." | Partially relevant — Thomas CS5864 chunks at ranks 4–5 (dist=0.60) say "Class is hard"; the explicit "easy A" review ranked ~25th | Inaccurate |
+| 5 | How many reports are assigned in Amun Kharel's CS3724, and is attendance mandatory? | 4 group + 1 personal report; attendance mandatory in some sections | Correctly cites 4 group + 1 personal report; says no info on attendance | Relevant — top Kharel chunk (`amun_kharel_rmp_1`, dist=0.52) contains report count | Partially accurate |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
+
+### Retrieved chunks per question (top-5)
+
+**Q1 — CS1064 / John Lewis**
+| Rank | Distance | Chunk | Content preview |
+|------|----------|-------|-----------------|
+| 1 | 0.41 | `john_lewis_rmp_28` | "If you need to take CS1064, then John Lewis is your guy... spend time outside of class (roughly 1-3 hours)" |
+| 2 | 0.41 | `amun_kharel_rmp_0` | Unrelated — Kharel HCI praise |
+| 3–5 | 0.43–0.44 | Other professors | Off-topic for CS1064 |
+
+**Q2 — Farghally test retakes**
+| Rank | Distance | Chunk | Content preview |
+|------|----------|-------|-----------------|
+| 1 | 0.43 | `mohammed_farghally_rmp_35` | "Free test retakes are incredible" |
+| 2 | 0.50 | `cs2114_coursicle_17` | Duplicate Farghally review from Coursicle |
+| 3 | 0.55 | `mohammed_farghally_rmp_36` | "This guy was retakes for tests!" |
+
+**Q3 — Ellis CS2114 grading (failure)**
+| Rank | Distance | Chunk | Content preview |
+|------|----------|-------|-----------------|
+| 1 | 0.44 | `margaret_ellis_rmp_30` | CS**2104** — "Very slow and inconsistent assignment grading" (wrong course) |
+| 2 | 0.44 | `cs2114_coursicle_16` | CS2114 — unprofessional/dismissive (different complaint) |
+| 5 | 0.52 | `margaret_ellis_rmp_33` | CS2114 — positive review (conflicting signal) |
+| 8 | 0.59 | `margaret_ellis_rmp_31` | CS2114 — **"TAs are incredibly slow... grade drops to B-/C+"** (correct chunk, missed top-5) |
+
+**Q4 — Chris Thomas easy A (primary failure)**
+| Rank | Distance | Chunk | Content preview |
+|------|----------|-------|-----------------|
+| 1 | 0.54 | `heath_hillman_rmp_24` | Unrelated Hillman CS1114 review |
+| 2 | 0.55 | `amun_kharel_rmp_0` | "Intro to HCI is a really easy class" — false semantic match on "easy" |
+| 4 | 0.60 | `chris_thomas_rmp_10` | "Class is hard" — relevant but no "easy A" phrasing |
+| ~25 | 0.69 | `chris_thomas_rmp_8` | **"if you want easy A take someone else"** — correct chunk, far below top-5 |
+
+**Q5 — Kharel CS3724 reports**
+| Rank | Distance | Chunk | Content preview |
+|------|----------|-------|-----------------|
+| 1 | 0.52 | `amun_kharel_rmp_1` | "4 group and 1 personal report" |
+| 2–3 | 0.66–0.67 | Other Kharel reviews | Related but less specific |
 
 ---
 
@@ -108,7 +177,15 @@ Source attribution is enforced through two independent mechanisms:
 
 **Root cause (tied to a specific pipeline stage):** The failure is at the **retrieval stage**. The query "easy A" activated semantic neighbors about easy courses in general — the top 3 results were a Hillman introductory course, a Kharel HCI review describing an "easy class," and a John Lewis CS1064 review mentioning the class "is not super difficult." The Thomas "easy A" chunk ranked 25th out of 47. MiniLM embedded "easy A" more strongly against reviews using those exact words in a positive context (easy class = good) than against the Thomas reviews where "easy A" appears as a negative warning ("if you want easy A take someone else"). The phrase's sentiment flipped the embedding direction just enough to push those chunks below the top-5 retrieval window.
 
-**What you would change to fix it:** Two options: (1) **Increase top-k** from 5 to 8–10 at query time — the Thomas chunks appear at ranks 4–5 when k=5 for one formulation and at rank 25 for another; a larger window would catch them for more query phrasings. (2) **Add BM25 keyword search** (stretch feature) alongside semantic search — "Chris Thomas" is a proper name that BM25 would match exactly, regardless of embedding distance, ensuring his reviews always appear in the retrieval set when his name is in the query.
+**What you would change to fix it:** (1) **Hybrid search** — combine BM25 keyword search with semantic search so "Chris Thomas" and "CS5864" match exactly regardless of embedding distance. (2) **Increase top-k** from 5 to 8–10 so borderline-relevant chunks like Thomas rank 4–5 and the explicit "easy A" chunk have more chance of inclusion. (3) **Metadata filtering** — when a professor name appears in the query, filter retrieval to chunks where `metadata.professor` contains that name before ranking.
+
+### Secondary failure: Q3 (Ellis CS2114 grading)
+
+**Question:** "What specific grading complaint do students raise about Margaret Ellis's CS2114 section?"
+
+**What happened:** The correct CS2114 chunk (`margaret_ellis_rmp_31`: "TAs are incredibly slow... grade drops to B-/C+") ranked 8th. Top-5 included a CS2104 slow-grading complaint (wrong course), a CS2114 personality complaint, and a positive CS2114 review. The LLM refused to answer entirely rather than synthesizing the partial evidence.
+
+**Root cause:** Same retrieval limitation as Q4 — course-specific facts in short reviews compete with semantically similar but wrong-course chunks. Generation compounded the failure by treating the refusal rule too strictly when related (but misattributed) evidence existed at rank 1.
 
 ---
 
@@ -133,3 +210,9 @@ Source attribution is enforced through two independent mechanisms:
 - *What I gave the AI:* The Retrieval Approach section from `planning.md`, the `chunker.py` chunk dict schema, and the `requirements.txt` listing `chromadb>=0.6.0` and `sentence-transformers==3.4.1`. Asked Claude to implement `embed.py` and `retrieve.py` per the spec's architecture diagram.
 - *What it produced:* Working `embed.py` using `chromadb.PersistentClient` with `hnsw:space=cosine`, and `retrieve.py` with lazy-loaded model and collection globals.
 - *What I changed or overrode:* The generated relevance-check logic in `retrieve.py`'s `__main__` block initially required the top-1 result for query 3 (Chris Thomas easy A) to match exactly — which it never would because the query phrase activates general "easy class" embeddings first. Rewrote `_check_relevance` for query 3 to search all top-k results for any Thomas CS5814/CS5864 chunk meeting a difficulty-keyword threshold, which is a more accurate test of what the retrieval stage should guarantee.
+
+**Instance 3**
+
+- *What I gave the AI:* The Evaluation Plan from `planning.md`, the Grounded Generation requirements from the project spec, and the `retrieve()` function signature. Asked Claude to implement `generate.py` with a 4-rule grounding system prompt and `app.py` with Gradio.
+- *What it produced:* Working `generate.py` with `ask()` calling Groq `llama-3.3-70b-versatile`, and a Gradio UI with example questions including an out-of-domain dining hall query to test refusal behavior.
+- *What I changed or overrode:* Added `temperature=0.2` to reduce hallucination. Stripped the duplicate metadata prefix from chunk text before sending to the LLM (chunks already embed `[Source: ... | Professor: ...]` in the text; the context builder adds a cleaner header instead). Expanded the README evaluation section manually after running `evaluate.py` — the initial AI-generated summaries didn't include per-chunk distance scores, which Milestone 6 requires for honest failure analysis.
