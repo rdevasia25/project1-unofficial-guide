@@ -1,0 +1,34 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2891584
+Professor: Chris Thomas
+Department: Computer Science, Virginia Tech
+Overall Rating: 5.0/5 (5 ratings)
+Would Take Again: 100%
+Difficulty: 4.8/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS5814 | Date: May 12, 2024 | Quality: 5.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: Really good professor and the lectures are information-dense but very engaging. A little math-heavy but provides a good foundation for deep learning. Dr. Chris gives extra credit opportunities and curves the exams. He is very knowledgeable and approachable, takes the extra time to clear any doubts, and gives useful feedback. Worthwhile.
+Tags: Amazing lectures, Gives good feedback, Caring
+
+Course: CS5814 | Date: May 5, 2024 | Quality: 5.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: hes insanely smart and a good teacher and person. He cares about ppl and will ask how your interview went. in office hours he did a proof of some thing I asked off top of his head. class is very math heavy and a lot of work but he'll help u succeed esp if u ask for help! if you want easy A take someone else but if u want to learn i highly recommend
+Tags: EXTRA CREDIT, Amazing lectures, Test heavy
+
+Course: CS5864 | Date: Feb 10, 2024 | Quality: 5.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Very information-dense subject, especially the first half (non-deep computer vision / classical techniques). If you pay attention and study hard, you should be alright. Outstanding lecturer and fiendishly smart guy, well worth taking with him. Will set you up to succeed if you put in the work!
+Tags: Tough grader, Group projects, Lecture heavy
+
+Course: CS5864 | Date: Feb 2, 2024 | Quality: 5.0 | Difficulty: 4.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Class is hard but he is very passionate about his teaching
+
+Course: CS5864 | Date: Dec 11, 2023 | Quality: 5.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: Exams and HW are INTENSE, but he bell curves like crazy. There were a lot of things I wish were different (no grading rubric), but I could tell he cared a lot about me learning and spent several hours going over concepts with me. No easy A by any means, but I learned more than any other class I've taken at VT. I appreciate that he actually cared.
+Tags: EXTRA CREDIT, Lots of homework, Caring

@@ -9,31 +9,27 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+Student reviews of CS professors at Virginia Tech. Official course catalogs describe curriculum and prerequisites, but they do not reflect teaching style, exam difficulty, TA grading speed, or which section is worth the registration fight. That knowledge lives in student reviews on Rate My Professors and Coursicle — scattered, unsearchable, and never cited together.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | John Lewis (RMP) | Professor reviews — CS1064 | `documents/john_lewis_rmp.txt` |
+| 2 | Mohammed Farghally (RMP) | Professor reviews — CS2114/CS3114 | `documents/mohammed_farghally_rmp.txt` |
+| 3 | Margaret Ellis (RMP) | Professor reviews — CS2104/CS2114 | `documents/margaret_ellis_rmp.txt` |
+| 4 | Chris Thomas (RMP) | Professor reviews — grad ML/CV | `documents/chris_thomas_rmp.txt` |
+| 5 | Amun Kharel (RMP) | Professor reviews — CS3724 HCI | `documents/amun_kharel_rmp.txt` |
+| 6 | Anuj Karpatne (RMP) | Professor reviews — CS5525 | `documents/anuj_karpatne_rmp.txt` |
+| 7 | Richard Charles (RMP) | Professor reviews — CS2304 SQL | `documents/richard_charles_rmp.txt` |
+| 8 | Shaddi Hasan (RMP) | Professor reviews — grad courses | `documents/shaddi_hasan_rmp.txt` |
+| 9 | Heath Hillman (RMP) | Professor reviews — intro courses | `documents/heath_hillman_rmp.txt` |
+| 10 | CS1064 (Coursicle) | Course-level reviews (93 total) | `documents/cs1064_coursicle.txt` |
+| 11 | CS2114 (Coursicle) | Course-level reviews (91 total) | `documents/cs2114_coursicle.txt` |
+
+See `documents/sources.md` for original URLs and collection notes.
 
 ---
 

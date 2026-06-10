@@ -1,0 +1,25 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/3052333
+Professor: Amun Kharel
+Department: Computer Science, Virginia Tech
+Overall Rating: 5.0/5 (3 ratings)
+Would Take Again: 100%
+Difficulty: 2.0/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS3724 | Date: Dec 11, 2024 | Quality: 5.0 | Difficulty: 1.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A+
+Review: Absolutely goated professor. Intro to HCI is a really easy class, but he's a great guy who gives great lectures so he makes it engaging and worth showing up to. He's a very reasonable grader, is flexible with giving extensions, and is very approachable and helpful. Probably one of the best CS professors Ive had at tech, would highly recommend
+Tags: Group projects, Gives good feedback, Caring
+
+Course: CS3724 | Date: Dec 3, 2024 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: Great professor, wrapping up his Intro to HCI course, and would definitely recommend taking his class. Always has engaging lectures and is passionate about what he teaches. Coursework is average however you have plenty of time to get it all done. There's a total of 4 group and 1 personal report.
+Tags: Amazing lectures, Clear grading criteria, Caring
+
+Course: CS3724 | Date: Dec 3, 2024 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: One of the greatest professors I've had at Virginia Tech. He always makes engaging conversations in class that relate to the lecture which really helps you grasp the concept that much better. The coursework is reasonable and completely fair especially if you start on time. You'll have 4 reports but plenty of time to get each done.
+Tags: EXTRA CREDIT, Group projects, Amazing lectures

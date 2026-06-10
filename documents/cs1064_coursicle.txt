@@ -1,0 +1,23 @@
+Source: Coursicle
+URL: https://www.coursicle.com/vt/courses/CS/1064/
+Course: CS1064 - Intro to Programming in Python
+Department: Computer Science, Virginia Tech
+Total Reviews: 93
+Avg Professor Rating: 4.8/5
+Collected: 2026-06-09
+
+--- Course Description ---
+
+Introduction to programming in Python contextualized with scientific and engineering problems. Computational problem-solving skills and software solutions in addition to Python language fundamentals. The basics of control flow with loops and conditionals, state tracing and manipulation, simple and complex types, organization of code using functional and object-oriented coding strategies, and data processing. Create, interpret, and debug programs. Ethically debate important issues in computing culture.
+
+Class Size: 90-550 | Credits: 3
+
+--- Sample Reviews ---
+
+Professor: J. Wenskovitch | Student: First-year CMDA | ~3 years ago
+Review: Really funny and personable guy who makes the class really easy. When we did iClickers he showed us the answer distributions as we guessed so I never had to worry about missing those. He's project heavy and same with programming homework but you have more than enough time to get it done and it's easy to get help from him and TAs.
+
+Professor: John Lewis | Student: Junior HIST | ~4 months ago
+Review: bro literally woke up on a snow day, canceled our final quiz, and gave everyone 100s. john lewis my goat. he knows what he's talking about and explains things well. lectures are kind of a snoozefest but he'll start laughing at his own jokes and that'll wake you up. pretty much everything is graded by the TAs, but he's always there if you need him.
+
+Recent professors teaching this course: John Lewis, J. Wenskovitch, Heath Hillman, and others.

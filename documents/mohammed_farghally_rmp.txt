@@ -1,0 +1,34 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2657788
+Professor: Mohammed Farghally
+Department: Computer Science, Virginia Tech
+Overall Rating: 4.8/5 (13 ratings)
+Would Take Again: 100%
+Difficulty: 2.6/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS2114 | Date: Jan 21, 2026 | Quality: 4.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: From someone who never did, please start the projects before they're due. The grading platform is too finicky to be messing with it an hour before it's due, and the late penalty can hurt. As a professor, he answers questions well, nice guy who wants you to learn, and he's very accommodating if you reach out. Free test retakes are incredible.
+
+Course: CS2114 | Date: Dec 16, 2025 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: Class is great. The professor is great. Don't lose stupid points by doing the project late or not showing up and you will get an A. This guy was retakes for tests!
+Tags: Participation matters, Group projects, Graded by few things
+
+Course: CS2114 | Date: Oct 23, 2025 | Quality: 5.0 | Difficulty: 1.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Was a very sweet guy with great lectures that went into detail about the content. The class is "flipped learning" style which surprisingly helped a lot.
+Tags: Amazing lectures, Clear grading criteria, Caring
+
+Course: CS3114 | Date: May 9, 2025 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: By far the best professor I've had at VT. Projects can be time consuming but as long as you start early you'll be fine. There are quizzes during most classes for attendance, which is 5% of your grade. It's a easy A as long as you keep up with the material and assignments.
+Tags: EXTRA CREDIT, Group projects, Clear grading criteria
+
+Course: CS3114 | Date: May 7, 2025 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: Best 3114 professor by far. 3114 takes a lot of time regardless, but Prof. Farghally is a good lecturer and gives alot of leeway. Projects are the main bulk of the class, so (1) start early, (2) get a great partner, (3) go to office hours the moment you get stuck, and (4) take advantage of the 10% bonus given by turning in early.
+Tags: Group projects, Clear grading criteria, Lots of homework

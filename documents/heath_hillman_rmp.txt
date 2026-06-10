@@ -1,0 +1,34 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2861248
+Professor: Heath Hillman
+Department: Computer Science, Virginia Tech
+Overall Rating: 2.6/5 (64 ratings)
+Would Take Again: 39%
+Difficulty: 3.4/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS2064 | Date: May 29, 2026 | Quality: 2.0 | Difficulty: 4.0
+For Credit: Yes | Attendance: Not Mandatory | Grade: A
+Review: Hillman isn't that bad, but it's very easy to fall behind on lectures and completely miss out on key parts. Had 5 coding projects that weren't too bad, just don't start them the day before they're due. Just make sure you pay attention during lectures and follow along with the lecture code and dedicate some time to studying and you'll be fine.
+Tags: Lecture heavy
+
+Course: CS2064 | Date: May 2, 2026 | Quality: 1.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Mandatory | Grade: B+
+Review: Currently in tears writing this, and it will be you next if you take him for your class. My mental health is in severe pain. Please save yourself.
+Tags: Tough grader, Participation matters, Lecture heavy
+
+Course: CS2064 | Date: Apr 30, 2026 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes | Grade: A
+Review: I actually really enjoyed this class. He has a sarcastic sense of humor, which made the class more engaging for me, but it might not come across that way to some. He is a nice guy, and was very helpful with accommodations. There were three tests and some projects. Lectures were mandatory and you do need to pay attention during them.
+Tags: Hilarious, Test heavy
+
+Course: CS2064 | Date: Apr 22, 2026 | Quality: 1.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Grade: A-
+Review: Very poorly taught, I only went to lecture for attendance. If you want to get an A in this class, you'll have to self-study. 100% take with another professor if possible. He's passive aggressive and his class was the reason some people drop out of the CMDA major.
+
+Course: CS1114 | Date: Apr 11, 2026 | Quality: 1.0 | Difficulty: 5.0
+For Credit: Yes | Attendance: Not Mandatory | Grade: B
+Review: Definitely not an introductory cs class he taught it as if everybody was a java professional.
+Tags: Tough grader, Lots of homework, Test heavy

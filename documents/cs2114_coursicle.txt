@@ -1,0 +1,33 @@
+Source: Coursicle
+URL: https://www.coursicle.com/vt/courses/CS/2114/
+Course: CS2114 - Software Design and Data Structures
+Department: Computer Science, Virginia Tech
+Total Reviews: 91
+Avg Professor Rating: 4.9/5
+Collected: 2026-06-09
+
+--- Course Description ---
+
+A programming-intensive exploration of software design concepts and implementation techniques. Builds on knowledge of fundamental object-oriented programming. Advanced object-oriented software design, ethics in computing, algorithm development and analysis, and classic data structures. Includes a team-based software project.
+
+Class Size: 30-300 | Credits: 3 | Typical Class Length: 2 hours 30 minutes
+
+--- Sample Reviews ---
+
+Professor: Margaret Ellis | Student: Graduate CS | ~2 years ago
+Review: Ellis was incredibly unprofessional and disrespectful as a professor. She did not seem to care for her students, and was very dismissive of issues. If possible, aim to take a different professor. This one will make your CS journey hell.
+
+Professor: M. Farghally | Student: First-year Undecided | ~4 months ago
+Review: From someone who never did, please start the projects before they're due. The grading platform is too finicky to be messing with it an hour before it's due, and the late penalty can hurt. As a professor, he answers questions well, nice guy who wants you to learn, and he's very accommodating if you reach out. Free test retakes are incredible.
+
+Recent professors teaching this course: Margaret Ellis, Heath Hillman, Mohammed Farghally, Andria Esakia, and others.
+
+--- Notes from additional Coursicle reviews ---
+
+Professor: H. Hillman | Student: First-year CS | ~11 months ago
+Review: He really just is a bad teacher, is not supportive in any manner, so it kinda feels like he wants you to do bad. Lectures are useless, rarely covering anything other than what are sort of like kahoots that are graded and require your attendance. Overall, try at all costs to avoid him, worst teacher for 2114.
+
+Professor: E. Abdelrahman | Student: (year/major not listed)
+Review: The course was fairly easy and was mostly asynchronous with optional attendance and labs. That said Prof. Abdelrahman's lectures were good and she was available to help when needed.
+
+Cons noted for some instructors: neglects student concerns; dull unhelpful lectures; most learning is self-directed via modules; punishes students for VT system issues; heavy tests; lots of busywork.

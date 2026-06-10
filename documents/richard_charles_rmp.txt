@@ -1,0 +1,30 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2832708
+Professor: Richard Charles
+Department: Computer Science, Virginia Tech
+Overall Rating: 5.0/5 (4 ratings)
+Would Take Again: 100%
+Difficulty: 1.8/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS2304 | Date: Dec 18, 2025 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: A pretty simple class. His notes cover basically all parts of the assignments, which made it easy, and, as well as, had a little over a week for each assignment. The final was during the normal school days, so not a big closed-note final. He also gave extra credit just for attending class!
+Tags: Hilarious, Lecture heavy, Graded by few things
+
+Course: CS2304 | Date: Dec 21, 2024 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Prof. Charles is very knowledgeable about SQL. This is an easy 1-credit class that gives you a good introduction to writing "good" SQL queries. There are 4-5 assignments in the course and the final is a just a final assignment. Highly recommend the class and professor.
+Tags: Amazing lectures, Caring, Graded by few things
+
+Course: CS2304 | Date: Dec 15, 2022 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Teaches SQL for 2304 - easy class for a 1-hr credit. There's around 4/5 assignments in the class - with the final being more of an assignment, than a test. Make sure to go to class even if its an 8AM, Charles has pretty good lectures and might give out extra credit sometimes. Would recommend if you're interested in learning SQL
+Tags: EXTRA CREDIT, Respected, Graded by few things
+
+Course: CS2304 | Date: Oct 20, 2022 | Quality: 5.0 | Difficulty: 1.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: I took 2304 for SQL. Prof. Charles is really knowledgeable about SQL and often supplements his lectures with personal stories. He does insist on writing "good SQL", so you need to attend class to learn what his requirements are (StackOverflow has plenty of "bad SQL", so beware). He writes his queries live so you can write yours live with him
+Tags: Amazing lectures, Caring, Lecture heavy

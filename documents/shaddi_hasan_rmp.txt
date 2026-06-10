@@ -1,0 +1,25 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2779797
+Professor: Shaddi Hasan
+Department: Computer Science, Virginia Tech
+Overall Rating: 5.0/5 (3 ratings)
+Would Take Again: 100%
+Difficulty: 2.3/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS6204 | Date: Feb 27, 2025 | Quality: 5.0 | Difficulty: 1.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Shaddi is a helpful and supportive professor. Clear syllabus and project requirements, easy to follow. Good for graduate students, the project could align with your own research.
+Tags: Group projects, Clear grading criteria, Caring
+
+Course: CS4254 | Date: Jan 24, 2024 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A-
+Review: By far the best CS professor at Virginia Tech. The material he covers feels useful and informative. The projects are interesting. Highly recommend
+Tags: Participation matters, Amazing lectures
+
+Course: CS6204 | Date: May 12, 2022 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Would Take Again: Yes
+Review: He is the best professor I have ever studied with. I want to take Computing and Social Good again!! His feedbacks are awesome and he is so interactive. I am so glad that there are professors like Shaddi in VT who put their heart and soul in teaching. He is an asset to the Department of CS at VT. Best!
+Tags: Gives good feedback, Inspirational, Respected

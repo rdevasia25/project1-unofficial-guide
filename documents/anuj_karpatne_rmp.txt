@@ -1,0 +1,30 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2722388
+Professor: Anuj Karpatne
+Department: Computer Science, Virginia Tech
+Overall Rating: 4.5/5 (4 ratings)
+Would Take Again: 75%
+Difficulty: 3.5/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS5525 | Date: Oct 21, 2022 | Quality: 5.0 | Difficulty: 4.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: Awesome
+Tags: Amazing lectures, Clear grading criteria, Respected
+
+Course: CS5525 | Date: Apr 15, 2022 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: He is the best professor I have ever had in my grad school at Virginia Tech. He teaches very well and is caring for the students. Professors like him are assets to CS department at Virginia Tech.
+Tags: Amazing lectures, Gives good feedback, Caring
+
+Course: CS5525 | Date: Dec 8, 2021 | Quality: 3.0 | Difficulty: 4.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: No
+Review: workload is more, everything else is fine
+Tags: Tough grader
+
+Course: CS5525 | Date: Oct 1, 2021 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: He teaches well, explains everything clearly. He is a gem!
+Tags: Amazing lectures

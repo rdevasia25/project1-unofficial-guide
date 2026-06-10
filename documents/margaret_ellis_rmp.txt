@@ -1,0 +1,35 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2049285
+Professor: Margaret Ellis
+Department: Computer Science, Virginia Tech
+Overall Rating: 2.2/5 (41 ratings)
+Would Take Again: 35%
+Difficulty: 3.2/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS2104 | Date: May 1, 2026 | Quality: 1.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Grade: A
+Review: 1. Absurd amount of "classwork," homework, and Peer plus. 2. Class is completely meaningless, but mostly required attendance. 3. Very slow and inconsistent assignment grading.
+Tags: Lots of homework, Lecture heavy
+
+Course: CS2114 | Date: Mar 31, 2026 | Quality: 2.0 | Difficulty: 4.0
+For Credit: Yes | Attendance: Mandatory | Grade: B
+Review: An okay professor, but the amount of "classwork" and homework is a lot. The TAs are incredibly slow, so one week you would be at an 'A' and after four weeks, your grade drops to a 'B-/C+.' The exam is alright. Would help if we could resubmit the work and not accept the points deducted because the instructions are unclear half of a time.
+Tags: Tough grader, Get ready to read, Lots of homework
+
+Course: CS2104 | Date: Jan 22, 2026 | Quality: 5.0 | Difficulty: 1.0
+For Credit: Yes | Would Take Again: Yes
+Review: Professor Ellis is amazing. Her lectures are very interesting and to the point, which makes understanding concepts very easy. She genuinely cares a lot about her students and she's very sweet. Would definitely take her classes again.
+Tags: Amazing lectures, Inspirational, Caring
+
+Course: CS2114 | Date: Dec 20, 2025 | Quality: 5.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A+
+Review: all profs teach the class with identical format + content. so whoever your prof is shouldn't make a big diff in your grade. i personally loved her, not sure why her rating is so low. super sweet and caring. exams pretty easy, projects kinda long/hard so start early. strict on project/lab deadlines, so don't expect TAs/profs to accommodate for you
+Tags: Clear grading criteria, Gives good feedback, Respected
+
+Course: CS2114 | Date: Dec 16, 2025 | Quality: 2.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Mandatory | Grade: B
+Review: Course is taught entirely through online recording and readings.
+Tags: Get ready to read, Lots of homework

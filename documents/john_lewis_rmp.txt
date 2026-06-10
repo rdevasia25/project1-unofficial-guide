@@ -1,0 +1,33 @@
+Source: Rate My Professors
+URL: https://www.ratemyprofessors.com/professor/2453636
+Professor: John Lewis
+Department: Computer Science, Virginia Tech
+Overall Rating: 4.3/5 (75 ratings)
+Would Take Again: 88%
+Difficulty: 2.5/5
+Collected: 2026-06-09
+
+--- Reviews ---
+
+Course: CS1064 | Date: Jan 27, 2026 | Quality: 4.0 | Difficulty: 3.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes
+Review: Good professor. Tags: Amazing lectures, Gives good feedback, Caring.
+
+Course: CS1064 | Date: Jan 18, 2026 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A+
+Review: bro literally woke up on a snow day, canceled our final quiz, and gave everyone 100s. john lewis my goat. he knows what he's talking about and explains things well. lectures are kind of a snoozefest but he'll start laughing at his own jokes and that'll wake you up. pretty much everything is graded by the TAs, but he's always there if you need him.
+Tags: Clear grading criteria, Accessible outside class
+
+Course: CS1064 | Date: Jan 9, 2026 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A-
+Review: Best professor I have had at Virginia Tech. He is very accessible and makes every assignment clear. He also gives you plenty of time for everything.
+Tags: Amazing lectures, Caring, Accessible outside class
+
+Course: CS1064 | Date: Dec 18, 2025 | Quality: 5.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A
+Review: If you need to take CS1064, then John Lewis is your guy. Amazing professor, gave everyone 100s on the final quiz because of a snow day. Class is honestly not super difficult, spend time outside of class (roughly 1-3 hours) to try and understand the content and you should be good to go. Lectures are long but he goes over everything you need to know.
+
+Course: CS1064 | Date: Dec 13, 2025 | Quality: 4.0 | Difficulty: 2.0
+For Credit: Yes | Attendance: Not Mandatory | Would Take Again: Yes | Grade: A+
+Review: Dr. Lewis made my Python learning career as enjoyable as possible. I liked the class, and he always kept it entertaining, even at 4:15 pm. He is a great guy who always warns about deadlines and offers numerous opportunities for office hours. Although the readings can get monotonous, it's practically vital to read them to understand the material.
+Tags: Get ready to read, Lots of homework, Caring
